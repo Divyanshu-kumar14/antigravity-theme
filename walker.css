@@ -1,0 +1,25 @@
+/* Antigravity Walker Theme - Gruvbox Dark Hard */
+/* Extended color palette for the app launcher */
+
+@define-color selected-text #fabd2f;
+@define-color text #fbf1c7;
+@define-color base #1d2021;
+@define-color border #504945;
+@define-color foreground #fbf1c7;
+@define-color background #1d2021;
+
+/* Extended accents */
+@define-color surface0 #282828;
+@define-color surface1 #32302f;
+@define-color surface2 #3c3836;
+@define-color overlay0 #504945;
+@define-color overlay1 #665c54;
+@define-color subtext #a89984;
+@define-color accent #d79921;
+@define-color accent_dim #b57614;
+@define-color green #98971a;
+@define-color aqua #689d6a;
+@define-color blue #458588;
+@define-color purple #b16286;
+@define-color red #cc241d;
+@define-color orange #d65d0e;
