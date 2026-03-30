@@ -1,49 +1,91 @@
 @define-color bg #1d2021;
+@define-color bg-alt #282828;
+@define-color bg-hover #32302f;
 @define-color fg #ebdbb2;
-@define-color gray1 #32302f;
-@define-color gray2 #504945;
-@define-color gray3 #d79921;
-@define-color gray4 #928374;
-@define-color gray5 #a89984;
-@define-color fg_bright #fbf1c7;
+@define-color fg-bright #fbf1c7;
+@define-color accent #fe8019; /* Vibrant Gruvbox Orange */
+@define-color border #504945;
+@define-color input-bg #32302f;
+
+* {
+    font-family: inherit;
+    font-size: 16px;
+}
 
 window {
     background-color: @bg;
-    border: 2px solid @gray3;
+    border: 2px solid @border;
+    border-radius: 8px;
+    margin: 0px;
 }
 
-input {
+#input {
+    background-color: @input-bg;
+    color: @fg-bright;
+    border-radius: 6px;
+    padding: 14px;
+    margin: 15px;
+    border: 2px solid transparent;
+}
+
+#input:focus {
+    border: 2px solid @accent;
+}
+
+#outer-box {
+    margin: 5px;
+    padding-bottom: 10px;
     background-color: @bg;
-    color: @fg;
-    border: 1px solid @gray2;
 }
 
-input:selected {
-    background-color: @gray1;
-    color: @fg_bright;
+#inner-box {
+    background-color: @bg;
+}
+
+#text {
+    margin-left: 10px;
+    color: @fg;
 }
 
 #entry {
-    color: @fg;
-    background-color: @bg;
-    padding: 5px;
-    margin: 2px;
+    padding: 10px 12px;
+    margin: 4px 15px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+#entry:hover {
+    background-color: @bg-hover;
+    transition: background-color 0.2s;
 }
 
 #entry:selected {
-    background-color: @gray1;
-    color: @fg_bright;
+    background-color: @bg-hover;
+    border: 2px solid @accent;
+}
+
+#entry:selected #text {
+    color: @accent;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 12px;
 }
 
 scrollbar {
     background-color: @bg;
+    margin: 0px 5px;
 }
 
 scrollbar slider {
-    background-color: @gray2;
-    border-radius: 0px;
+    background-color: @border;
+    border-radius: 4px;
+    min-height: 20px;
+    min-width: 6px;
 }
 
 scrollbar slider:hover {
-    background-color: @gray3;
+    background-color: @accent;
 }
