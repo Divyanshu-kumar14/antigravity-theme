@@ -27,6 +27,7 @@ The Antigravity theme provides out-of-the-box styling and configurations for a w
 - **Waybar:** Status bar styling (`waybar.css`).
 - **Mako:** Minimalist notification daemon (`mako.ini`).
 - **SwayOSD:** Custom on-screen displays (`swayosd.css`).
+- **Screen Share Picker:** Hyprland preview share picker styling (`hyprland-preview-share-picker.css`).
 
 ### Application Launchers
 - **[Wofi](https://hg.sr.ht/~scoopta/wofi):** Themed application palette (`wofi.css`).
@@ -41,9 +42,11 @@ The Antigravity theme provides out-of-the-box styling and configurations for a w
 - **GTK:** Complete GTK theme configuration (`gtk.css`) matching the UI.
 - **[Neovim](https://neovim.io/):** Initial setup integrating the color palette (`neovim.lua`).
 - **VSCode:** Color palette (`vscode.json`).
+- **[Obsidian](https://obsidian.md/):** Note-taking app theme (`obsidian.css`).
 - **[btop](https://github.com/aristocratos/btop):** System monitor theme (`btop.theme`).
 - **[Superfile](https://github.com/mhucka/superfile):** File manager theme (`antigravity.toml`).
 - **Browser:** Chromium theming integration (`chromium.theme`).
+- **Keyboard:** RGB backlight color (`keyboard.rgb`).
 
 ## 🖼️ Backgrounds
 

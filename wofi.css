@@ -1,91 +1,88 @@
-@define-color bg #1d2021;
-@define-color bg-alt #282828;
-@define-color bg-hover #32302f;
-@define-color fg #ebdbb2;
-@define-color fg-bright #fbf1c7;
-@define-color accent #fe8019; /* Vibrant Gruvbox Orange */
-@define-color border #504945;
-@define-color input-bg #32302f;
+/* Antigravity Wofi — Minimalist App Drawer */
+@define-color bg      #1d2021;
+@define-color bg-sel  #3c3836;
+@define-color fg      #a89984;
+@define-color fg-sel  #ebdbb2;
+@define-color border  #504945;
 
 * {
-    font-family: inherit;
-    font-size: 16px;
+    font-family: 'JetBrainsMono Nerd Font', monospace;
+    font-size: 14px;
 }
 
 window {
     background-color: @bg;
     border: 2px solid @border;
-    border-radius: 8px;
-    margin: 0px;
+    border-radius: 0;
+    margin: 0;
 }
 
 #input {
-    background-color: @input-bg;
-    color: @fg-bright;
-    border-radius: 6px;
-    padding: 14px;
-    margin: 15px;
-    border: 2px solid transparent;
+    background-color: transparent;
+    color: @fg;
+    border: none;
+    border-bottom: 1px solid @border;
+    border-radius: 0;
+    padding: 12px 14px;
+    margin: 0;
+    font-size: 14px;
 }
 
 #input:focus {
-    border: 2px solid @accent;
+    border-bottom: 1px solid @border;
+    box-shadow: none;
 }
 
 #outer-box {
-    margin: 5px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 0;
     background-color: @bg;
 }
 
 #inner-box {
     background-color: @bg;
+    margin: 0;
+    padding: 0;
 }
 
 #text {
-    margin-left: 10px;
     color: @fg;
+    margin: 0;
 }
 
 #entry {
-    padding: 10px 12px;
-    margin: 4px 15px;
-    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 0;
+    border-radius: 0;
     background-color: transparent;
-    border: 2px solid transparent;
-}
-
-#entry:hover {
-    background-color: @bg-hover;
-    transition: background-color 0.2s;
+    border: none;
 }
 
 #entry:selected {
-    background-color: @bg-hover;
-    border: 2px solid @accent;
+    background-color: @bg-sel;
+    border: none;
 }
 
 #entry:selected #text {
-    color: @accent;
-    font-weight: bold;
+    color: @fg-sel;
 }
 
 #img {
-    margin-right: 12px;
+    display: none;
 }
 
 scrollbar {
     background-color: @bg;
-    margin: 0px 5px;
+    margin: 0;
 }
 
 scrollbar slider {
     background-color: @border;
-    border-radius: 4px;
+    border-radius: 0;
     min-height: 20px;
-    min-width: 6px;
+    min-width: 4px;
 }
 
 scrollbar slider:hover {
-    background-color: @accent;
+    background-color: @fg;
 }
