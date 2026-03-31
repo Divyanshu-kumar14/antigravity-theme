@@ -4,8 +4,7 @@
 @define-color image #a89984;
 @define-color progress #fbf1c7;
 
-
-/* Cancel out Omarchy settings */
+/* Reset default window styling */
 window:not(:backdrop),
 window:backdrop {
     border: none;

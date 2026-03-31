@@ -36,9 +36,7 @@ window#waybar.hidden {
   margin-left: 4px;
 }
 
-.modules-center {
-  /* centered content */
-}
+.modules-center {}
 
 .modules-right {
   margin-right: 4px;
@@ -171,7 +169,6 @@ window#waybar.hidden {
 #network:hover,
 #pulseaudio:hover {
   background-color: @bg2;
-  border-radius: 3px;
 }
 
 /* --- Tooltips --- */
