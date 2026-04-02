@@ -1,0 +1,331 @@
+/* ======================================================
+ * Antigravity Theme for Discord — Gruvbox Dark Hard
+ * (Vesktop / Vencord Custom CSS)
+ * ======================================================
+ * Usage (Vesktop):
+ *   Settings → Vencord → Themes → Paste CSS or load file
+ *
+ * Usage (Vencord browser extension):
+ *   Settings → Vencord → Themes → Online Themes → Local Themes → Load
+ * ====================================================== */
+
+/* --- Gruvbox Dark Hard Palette Variables --- */
+:root {
+  /* Backgrounds */
+  --bg-hard:              #1d2021;
+  --bg:                   #282828;
+  --bg-soft:              #32302f;
+  --bg1:                  #3c3836;
+  --bg2:                  #504945;
+  --bg3:                  #665c54;
+  --bg4:                  #7c6f64;
+
+  /* Foregrounds */
+  --fg:                   #fbf1c7;
+  --fg1:                  #ebdbb2;
+  --fg2:                  #d5c4a1;
+  --fg3:                  #bdae93;
+  --fg4:                  #a89984;
+  --gray:                 #928374;
+
+  /* Palette */
+  --red:                  #cc241d;
+  --bright-red:           #fb4934;
+  --green:                #98971a;
+  --bright-green:         #b8bb26;
+  --yellow:               #d79921;
+  --bright-yellow:        #fabd2f;
+  --blue:                 #458588;
+  --bright-blue:          #83a598;
+  --purple:               #b16286;
+  --bright-purple:        #d3869b;
+  --aqua:                 #689d6a;
+  --bright-aqua:          #8ec07c;
+  --orange:               #d65d0e;
+  --bright-orange:        #fe8019;
+}
+
+/* ---- GLOBAL OVERRIDES ---- */
+.theme-dark {
+  /* Primary backgrounds */
+  --background-primary:            var(--bg-hard);
+  --background-secondary:          var(--bg);
+  --background-secondary-alt:      var(--bg-hard);
+  --background-tertiary:           var(--bg-hard);
+  --background-accent:             var(--bg1);
+  --background-floating:           var(--bg);
+  --background-modifier-hover:     var(--bg1);
+  --background-modifier-active:    var(--bg2);
+  --background-modifier-selected:  var(--bg1);
+  --background-modifier-accent:    rgba(235, 219, 178, 0.06);
+
+  /* Chat input / message box */
+  --channeltextarea-background:    var(--bg1);
+
+  /* Text */
+  --text-normal:                   var(--fg1);
+  --text-muted:                    var(--gray);
+  --text-link:                     var(--bright-blue);
+
+  /* Headers and interactive */
+  --header-primary:                var(--fg);
+  --header-secondary:              var(--fg4);
+  --interactive-normal:            var(--fg3);
+  --interactive-hover:             var(--fg1);
+  --interactive-active:            var(--fg);
+  --interactive-muted:             var(--bg3);
+
+  /* Brand / accent is Gruvbox Yellow */
+  --brand-experiment:              var(--bright-yellow);
+  --brand-experiment-560:          var(--yellow);
+
+  /* Scrollbar */
+  --scrollbar-thin-thumb:          var(--bg2);
+  --scrollbar-thin-track:          transparent;
+  --scrollbar-auto-thumb:          var(--bg2);
+  --scrollbar-auto-track:          var(--bg-hard);
+  --scrollbar-auto-scrollbar-color-thumb: var(--bg2);
+  --scrollbar-auto-scrollbar-color-track: var(--bg-hard);
+
+  /* Deprecation / info */
+  --info-positive-foreground:      var(--bright-green);
+  --info-warning-foreground:       var(--bright-yellow);
+  --info-danger-foreground:        var(--bright-red);
+  --status-positive:               var(--bright-green);
+  --status-warning:                var(--bright-yellow);
+  --status-danger:                 var(--bright-red);
+}
+
+/* ---- SERVER LIST (icon column) ---- */
+nav[aria-label="Servers sidebar"] {
+  background-color: var(--bg-hard) !important;
+}
+
+/* ---- CHANNEL SIDEBAR ---- */
+.sidebar_a4d4d9,
+.sidebar_e031be {
+  background-color: var(--bg) !important;
+}
+
+/* Category headers */
+.containerDefault_f6f816 .name_f37cb1,
+.containerDefault__30387 .name__8163a {
+  color: var(--fg4) !important;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+/* Channel names */
+.link_d8bfb3,
+.link__95dc0 {
+  color: var(--fg3) !important;
+}
+
+.link_d8bfb3:hover,
+.link__95dc0:hover {
+  color: var(--fg) !important;
+  background-color: var(--bg1) !important;
+}
+
+/* Selected channel */
+.modeSelected_d8bfb3 .link_d8bfb3,
+.modeSelected__95dc0 .link__95dc0 {
+  color: var(--fg) !important;
+  background-color: var(--bg1) !important;
+}
+
+/* ---- CHAT AREA ---- */
+/* Message text */
+.messageContent_f9f2ca,
+.messageContent__21e69 {
+  color: var(--fg1) !important;
+}
+
+/* Timestamps */
+.timestamp_f9f2ca,
+.timestamp__21e69 {
+  color: var(--gray) !important;
+}
+
+/* Username in chat */
+.username_f9f2ca,
+.username__21e69 {
+  font-weight: bold !important;
+}
+
+/* Unread marker */
+.unreadBar_c65e2b,
+.unreadBar__33550 {
+  background-color: var(--bright-red) !important;
+  color: var(--fg) !important;
+}
+
+/* Embeds */
+.embedFull_b0068a,
+.embedFull__14919 {
+  background-color: var(--bg) !important;
+  border-color: var(--bg2) !important;
+}
+
+/* Code blocks in chat */
+code {
+  background-color: var(--bg) !important;
+  border: 1px solid var(--bg2) !important;
+  color: var(--bright-aqua) !important;
+}
+
+.markup_f8b740 pre,
+.markup__2f7cb pre {
+  background-color: var(--bg) !important;
+  border: 1px solid var(--bg1) !important;
+  border-radius: 6px !important;
+}
+
+/* ---- MEMBER LIST (right sidebar) ---- */
+.members_cbd271,
+.members__573eb {
+  background-color: var(--bg-hard) !important;
+}
+
+.membersGroup_cbd271,
+.membersGroup__573eb {
+  color: var(--fg4) !important;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+/* ---- USER PANEL (bottom-left) ---- */
+.panels_a4d4d9,
+.panels_e031be {
+  background-color: var(--bg-hard) !important;
+}
+
+/* ---- TITLE BAR ---- */
+.titleBar_a934d8,
+.titleBar__01c35 {
+  background-color: var(--bg-hard) !important;
+}
+
+/* ---- SEARCH BAR ---- */
+.search_a46bc4 .searchBar_e0840f,
+.search__8ae5e .searchBar__5a20a {
+  background-color: var(--bg1) !important;
+  color: var(--fg1) !important;
+}
+
+/* ---- MODALS & POPOUTS ---- */
+.root_f9a4c9,
+.root__3e2e1,
+.modal_d1e81e,
+.modal__0fdd5 {
+  background-color: var(--bg) !important;
+}
+
+.footer_f9a4c9,
+.footer__3e2e1 {
+  background-color: var(--bg-hard) !important;
+}
+
+/* ---- SETTINGS PAGES ---- */
+.contentRegion_c25c6d,
+.contentRegion__7c5f5 {
+  background-color: var(--bg-hard) !important;
+}
+
+.sidebarRegion_c25c6d,
+.sidebarRegion__7c5f5 {
+  background-color: var(--bg) !important;
+}
+
+/* ---- BUTTONS ---- */
+.button_dd4f85[class*="colorBrand"],
+.button__581d0[class*="colorBrand"] {
+  background-color: var(--bright-yellow) !important;
+  color: var(--bg-hard) !important;
+}
+
+.button_dd4f85[class*="colorBrand"]:hover,
+.button__581d0[class*="colorBrand"]:hover {
+  background-color: var(--yellow) !important;
+}
+
+/* Danger button */
+.button_dd4f85[class*="colorRed"],
+.button__581d0[class*="colorRed"] {
+  background-color: var(--red) !important;
+  color: var(--fg) !important;
+}
+
+.button_dd4f85[class*="colorRed"]:hover,
+.button__581d0[class*="colorRed"]:hover {
+  background-color: var(--bright-red) !important;
+}
+
+/* ---- TOOLTIPS ---- */
+.tooltip_b6c360,
+.tooltip__735ab {
+  background-color: var(--bg) !important;
+  color: var(--fg1) !important;
+  border: 1px solid var(--bg2) !important;
+}
+
+/* ---- MENTION HIGHLIGHTS ---- */
+.mentioned_f9f2ca,
+.mentioned__21e69 {
+  background-color: rgba(250, 189, 47, 0.08) !important;
+  border-left: 3px solid var(--bright-yellow) !important;
+}
+
+/* ---- REACTIONS ---- */
+.reaction_fef95b,
+.reaction__4a43f {
+  background-color: var(--bg1) !important;
+  border: 1px solid var(--bg2) !important;
+}
+
+.reaction_fef95b:hover,
+.reaction__4a43f:hover {
+  background-color: var(--bg2) !important;
+  border-color: var(--bright-yellow) !important;
+}
+
+/* ---- EMOJI PICKER ---- */
+.emojiPicker_b50140,
+.contentWrapper_b50140 {
+  background-color: var(--bg) !important;
+}
+
+/* ---- AUTOCOMPLETE ---- */
+.autocomplete_f23da8 {
+  background-color: var(--bg) !important;
+  border: 1px solid var(--bg2) !important;
+}
+
+.selectorSelected_f23da8 {
+  background-color: var(--bg1) !important;
+}
+
+/* ---- VOICE CONNECTED UI ---- */
+.connection_a4d4d9 {
+  border-top: 1px solid var(--bg2) !important;
+}
+
+/* ---- SCROLLBAR COSMETIC DETAILS ---- */
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-hard) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg2) !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg3) !important;
+}

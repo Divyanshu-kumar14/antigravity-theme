@@ -1,0 +1,386 @@
+// ======================================================
+// Antigravity Theme for Telegram Desktop — Gruvbox Dark Hard
+// ======================================================
+// Usage:
+//   1. Open Telegram Desktop
+//   2. Go to Settings → Chat Settings → Choose from file
+//   3. Select this .tdesktop-theme file
+//   4. Apply
+// ======================================================
+
+// --- Color Key ---
+// Gruvbox Dark Hard:
+//   bg-hard  = #1d2021   bg       = #282828   bg1 = #3c3836
+//   bg2      = #504945   bg3      = #665c54   bg4 = #7c6f64
+//   fg       = #fbf1c7   fg1      = #ebdbb2   fg4 = #a89984
+//   gray     = #928374
+//   red      = #cc241d   bright-red    = #fb4934
+//   green    = #98971a   bright-green  = #b8bb26
+//   yellow   = #d79921   bright-yellow = #fabd2f
+//   blue     = #458588   bright-blue   = #83a598
+//   purple   = #b16286   bright-purple = #d3869b
+//   aqua     = #689d6a   bright-aqua   = #8ec07c
+//   orange   = #d65d0e   bright-orange = #fe8019
+
+// ==========================
+// MAIN WINDOW
+// ==========================
+
+windowBg: #1d2021;
+windowFg: #ebdbb2;
+windowBgOver: #3c3836;
+windowBgRipple: #504945;
+windowFgOver: #fbf1c7;
+windowSubTextFg: #a89984;
+windowSubTextFgOver: #ebdbb2;
+windowBoldFg: #fbf1c7;
+windowBoldFgOver: #fbf1c7;
+windowBgActive: #fabd2f;
+windowFgActive: #1d2021;
+windowActiveTextFg: #83a598;
+windowShadowFg: #1d202180;
+windowShadowFgFallback: #1d2021;
+
+// ==========================
+// SHADOWS & OVERLAYS
+// ==========================
+
+shadowFg: #00000040;
+slideFadeOutBg: #1d2021c0;
+slideFadeOutShadowFg: #1d202130;
+
+// ==========================
+// CONTENT LINKS & ACCENTS
+// ==========================
+
+lightButtonBg: #1d2021;
+lightButtonBgOver: #3c3836;
+lightButtonBgRipple: #504945;
+lightButtonFg: #83a598;
+lightButtonFgOver: #83a598;
+
+attentionButtonFg: #fb4934;
+attentionButtonFgOver: #fb4934;
+attentionButtonBgOver: #3c3836;
+attentionButtonBgRipple: #504945;
+
+// ==========================
+// OUTLINE & ACTIVE BUTTONS
+// ==========================
+
+outlineFg: #83a598;
+outlineFgOver: #83a598;
+
+activeButtonBg: #fabd2f;
+activeButtonBgOver: #d79921;
+activeButtonBgRipple: #d79921;
+activeButtonFg: #1d2021;
+activeButtonFgOver: #1d2021;
+activeButtonSecondaryFg: #1d2021;
+activeButtonSecondaryFgOver: #1d2021;
+activeLineFg: #fabd2f;
+activeLineFgError: #fb4934;
+
+// ==========================
+// CANCEL / DEFAULT BUTTONS
+// ==========================
+
+cancelIconFg: #a89984;
+cancelIconFgOver: #ebdbb2;
+
+defaultIconFg: #a89984;
+
+// ==========================
+// FILTER & TABS
+// ==========================
+
+filterInputBorderFg: #fabd2f;
+filterInputActiveBg: #282828;
+filterInputInactiveBg: #1d2021;
+
+// ==========================
+// TOOLTIPS
+// ==========================
+
+tooltipBg: #282828;
+tooltipFg: #ebdbb2;
+tooltipBorderFg: #3c3836;
+
+// ==========================
+// TITLE BAR
+// ==========================
+
+titleBg: #1d2021;
+titleShadow: #00000000;
+titleButtonFg: #a89984;
+titleButtonBgOver: #3c3836;
+titleButtonFgOver: #ebdbb2;
+titleButtonCloseBgOver: #cc241d;
+titleButtonCloseFgOver: #fbf1c7;
+titleFg: #ebdbb2;
+titleFgActive: #fbf1c7;
+
+// ==========================
+// INTRO / WELCOME SCREEN
+// ==========================
+
+introTitleFg: #fbf1c7;
+introDescriptionFg: #a89984;
+introFooterFg: #928374;
+
+// ==========================
+// TAB & FOLDER ICONS
+// ==========================
+
+mainMenuBg: #1d2021;
+mainMenuCoverBg: #1d202180;
+mainMenuCoverFg: #fbf1c7;
+
+// ==========================
+// SEARCH / FILTER
+// ==========================
+
+searchedBarBg: #282828;
+searchedBarFg: #83a598;
+
+// ==========================
+// SECTION & BOXES
+// ==========================
+
+topBarBg: #1d2021;
+
+emojiPanBg: #1d2021;
+emojiPanCategories: #1d2021;
+emojiPanHeaderFg: #a89984;
+emojiPanHeaderBg: #1d2021;
+stickerPanDeleteBg: #cc241d80;
+stickerPanDeleteFg: #fbf1c7;
+stickerPreviewBg: #1d2021dd;
+
+// ==========================
+// HISTORY / CHAT BACKGROUND
+// ==========================
+
+historyPeerUserpicFg: #1d2021;
+historyScrollBarBg: #50494580;
+historyScrollBarBgOver: #50494599;
+historyScrollBg: #3c383680;
+historyScrollBgOver: #3c383699;
+
+// ==========================
+// CHAT AREA
+// ==========================
+
+msgBg: #282828;
+msgBgOver: #3c3836;
+msgShadow: #00000020;
+msgServiceBg: #50494580;
+msgServiceFg: #fbf1c7;
+
+msgInBg: #282828;
+msgInBgSelected: #504945;
+msgInShadow: #00000020;
+msgInShadowSelected: #00000030;
+
+msgOutBg: #3c3836;
+msgOutBgSelected: #504945;
+msgOutShadow: #00000020;
+msgOutShadowSelected: #00000030;
+
+msgInDateFg: #928374;
+msgInDateFgSelected: #a89984;
+msgOutDateFg: #928374;
+msgOutDateFgSelected: #a89984;
+
+msgInServiceFg: #83a598;
+msgInServiceFgSelected: #83a598;
+msgOutServiceFg: #83a598;
+msgOutServiceFgSelected: #83a598;
+
+msgInReplyBarColor: #fabd2f;
+msgInReplyBarSelColor: #fabd2f;
+msgOutReplyBarColor: #fabd2f;
+msgOutReplyBarSelColor: #fabd2f;
+
+msgInMonoFg: #8ec07c;
+msgOutMonoFg: #8ec07c;
+msgInMonoFgSelected: #8ec07c;
+msgOutMonoFgSelected: #8ec07c;
+
+// File & Media
+msgFileThumbLinkInFg: #83a598;
+msgFileThumbLinkInFgSelected: #83a598;
+msgFileThumbLinkOutFg: #83a598;
+msgFileThumbLinkOutFgSelected: #83a598;
+msgFileInBg: #458588;
+msgFileInBgOver: #83a598;
+msgFileInBgSelected: #83a598;
+msgFileOutBg: #689d6a;
+msgFileOutBgOver: #8ec07c;
+msgFileOutBgSelected: #8ec07c;
+
+// Forwarded messages
+msgInFwdNameFg: #d3869b;
+msgInFwdNameFgSelected: #d3869b;
+msgOutFwdNameFg: #d3869b;
+msgOutFwdNameFgSelected: #d3869b;
+
+// Links and URLs
+msgInTextFg: #ebdbb2;
+msgInTextFgSelected: #fbf1c7;
+msgOutTextFg: #ebdbb2;
+msgOutTextFgSelected: #fbf1c7;
+
+historyLinkInFg: #83a598;
+historyLinkInFgSelected: #83a598;
+historyLinkOutFg: #83a598;
+historyLinkOutFgSelected: #83a598;
+
+// Reply quotes
+msgInReplyTextFg: #a89984;
+msgOutReplyTextFg: #a89984;
+
+// ==========================
+// COMPOSE BOX
+// ==========================
+
+historyComposeAreaBg: #1d2021;
+historyComposeAreaFg: #ebdbb2;
+historyComposeAreaFgService: #a89984;
+historySendIconFg: #83a598;
+historySendIconFgOver: #83a598;
+historyPinnedBg: #282828;
+
+historyReplyBg: #1d2021;
+historyReplyCancelFg: #fb4934;
+historyReplyCancelFgOver: #fb4934;
+
+// ==========================
+// MEDIA VIEWER
+// ==========================
+
+mediaviewFileBg: #1d2021;
+mediaviewFileNameFg: #ebdbb2;
+mediaviewFileSizeFg: #a89984;
+mediaviewFileRedCornerFg: #fb4934;
+mediaviewFileYellowCornerFg: #fabd2f;
+mediaviewFileGreenCornerFg: #b8bb26;
+mediaviewFileBlueCornerFg: #83a598;
+mediaviewBg: #1d2021f0;
+mediaviewVideoBg: #1d2021;
+mediaviewControlBg: #1d2021c0;
+mediaviewControlFg: #ebdbb2;
+mediaviewCaptionBg: #1d2021c0;
+mediaviewCaptionFg: #ebdbb2;
+mediaviewTextLinkFg: #83a598;
+mediaviewSaveMsgBg: #282828;
+mediaviewSaveMsgFg: #ebdbb2;
+mediaviewPlaybackActive: #fabd2f;
+mediaviewPlaybackInactive: #504945;
+mediaviewPlaybackProgressFg: #fbf1c7;
+mediaviewPlaybackIconFg: #ebdbb2;
+mediaviewPlaybackIconFgOver: #fbf1c7;
+mediaviewTransparentBg: #1d2021;
+mediaviewTransparentFg: #928374;
+
+// ==========================
+// PROFILE / INFO PANEL
+// ==========================
+
+profileBg: #1d2021;
+profileStatusFgOver: #fabd2f;
+
+// ==========================
+// NOTIFICATIONS
+// ==========================
+
+notificationBg: #282828;
+
+// ==========================
+// CALL UI
+// ==========================
+
+callBg: #1d2021;
+callNameFg: #fbf1c7;
+callFingerprintBg: #282828;
+callStatusFg: #a89984;
+callIconFg: #ebdbb2;
+callAnswerBg: #b8bb26;
+callAnswerRipple: #98971a;
+callHangupBg: #fb4934;
+callHangupRipple: #cc241d;
+callMuteRipple: #504945;
+callCancelBg: #fb4934;
+callCancelFg: #fbf1c7;
+callCancelRipple: #cc241d;
+
+// ==========================
+// MENU ICONS
+// ==========================
+
+menuIconFg: #a89984;
+menuIconFgOver: #ebdbb2;
+menuBg: #282828;
+menuBgOver: #3c3836;
+menuBgRipple: #504945;
+menuFg: #ebdbb2;
+menuFgOver: #fbf1c7;
+menuFgDisabled: #928374;
+menuSeparatorFg: #3c3836;
+menuSubmenuArrowFg: #a89984;
+
+// ==========================
+// BOTTOM BAR / SCROLL
+// ==========================
+
+scrollBg: #50494540;
+scrollBgOver: #50494580;
+scrollBarBg: #50494580;
+scrollBarBgOver: #50494599;
+
+// ==========================
+// SMALL CLOSE BUTTON
+// ==========================
+
+smallCloseIconFg: #a89984;
+smallCloseIconFgOver: #fb4934;
+
+// ==========================
+// CHECKBOX / RADIO
+// ==========================
+
+checkboxFg: #928374;
+radioFg: #928374;
+
+// ==========================
+// CONTACTS / CHAT LIST
+// ==========================
+
+contactsBg: #1d2021;
+contactsBgOver: #3c3836;
+contactsNameFg: #ebdbb2;
+contactsStatusFg: #928374;
+contactsStatusFgOver: #a89984;
+contactsStatusFgOnline: #b8bb26;
+
+dialogsBg: #1d2021;
+dialogsBgOver: #3c3836;
+dialogsBgActive: #3c3836;
+dialogsNameFg: #ebdbb2;
+dialogsNameFgActive: #fbf1c7;
+dialogsDateFg: #928374;
+dialogsDateFgActive: #a89984;
+dialogsTextFg: #a89984;
+dialogsTextFgActive: #ebdbb2;
+dialogsTextFgService: #fabd2f;
+dialogsTextFgServiceActive: #fabd2f;
+dialogsDraftFg: #fb4934;
+dialogsDraftFgActive: #fb4934;
+dialogsVerifiedIconBg: #fabd2f;
+dialogsVerifiedIconFg: #1d2021;
+dialogsSendingIconFg: #928374;
+dialogsSentIconFg: #b8bb26;
+dialogsUnreadBg: #fabd2f;
+dialogsUnreadBgMuted: #504945;
+dialogsUnreadFg: #1d2021;
+dialogsOnlineBadgeFg: #b8bb26;

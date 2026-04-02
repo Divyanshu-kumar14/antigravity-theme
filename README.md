@@ -100,25 +100,36 @@ Antigravity themes the modern Linux stack from the ground up:
 - **[Superfile](https://github.com/mhucka/superfile):** CLI File Manager (`antigravity.toml`)
 - **[btop](https://github.com/aristocratos/btop):** Terminal task manager (`btop.theme`)
 
+### Communication & Entertainment
+- **[Firefox](https://www.mozilla.org/firefox/):** Custom `userChrome.css` hiding the tab bar and recoloring the entire browser chrome (`firefox-userChrome.css`)
+- **[Discord](https://github.com/Vencord/Vesktop) (Vesktop / Vencord):** Full Gruvbox reskin for channels, chat, embeds, and modals (`discord-vencord.css`)
+- **[Spotify](https://spicetify.app/) (Spicetify):** Complete theme with `color.ini` and `user.css` for Spicetify (`spicetify-color.ini`, `spicetify-user.css`)
+- **[Telegram Desktop](https://desktop.telegram.org/):** Native `.tdesktop-theme` covering chat, sidebar, media viewer, and calls (`telegram.tdesktop-theme`)
+
 ## 📂 Repository Structure
 
 ```text
 antigravity-theme/
-├── backgrounds/         # High-resolution Gruvbox wallpapers (bg-1, bg-2, bg-3)
-├── alacritty.toml       # Alacritty config
-├── antigravity.toml     # Superfile color schema
-├── btop.theme           # System monitor styling
-├── colors.toml          # Global color hex mappings
-├── ghostty.conf         # Ghostty config
-├── gtk.css              # Custom GTK application styling
-├── hyprland.conf        # Hyprland WM config (Low-RAM optimized)
-├── hyprlock.conf        # Screen locker config
-├── kitty.conf           # Kitty config
-├── mako.ini             # Notification daemon styling
-├── neovim.lua           # Neovim color integration
-├── walker.css           # Walker app runner theme
-├── waybar.css           # Waybar status bar theme
-└── wofi.css             # Wofi app palette theme
+├── backgrounds/             # High-resolution Gruvbox wallpapers
+├── alacritty.toml           # Alacritty config
+├── antigravity.toml         # Superfile color schema
+├── btop.theme               # System monitor styling
+├── colors.toml              # Global color hex mappings
+├── discord-vencord.css      # Discord Vencord/Vesktop theme
+├── firefox-userChrome.css   # Firefox UI chrome styling
+├── ghostty.conf             # Ghostty config
+├── gtk.css                  # Custom GTK application styling
+├── hyprland.conf            # Hyprland WM config (Low-RAM optimized)
+├── hyprlock.conf            # Screen locker config
+├── kitty.conf               # Kitty config
+├── mako.ini                 # Notification daemon styling
+├── neovim.lua               # Neovim color integration
+├── spicetify-color.ini      # Spicetify Spotify color tokens
+├── spicetify-user.css       # Spicetify Spotify element styling
+├── telegram.tdesktop-theme  # Telegram Desktop theme
+├── walker.css               # Walker app runner theme
+├── waybar.css               # Waybar status bar theme
+└── wofi.css                 # Wofi app palette theme
 ```
 
 ## 🚀 Installation
@@ -144,6 +155,31 @@ To manually copy files into your setup for tools without the Omarchy installer, 
 - **Superfile:** Copy `antigravity.toml` to `~/.config/superfile/theme/` and update your `config.toml`.
 - **BTOP:** Copy `btop.theme` to `~/.config/btop/themes/antigravity.theme`.
 - **Mako:** Copy `mako.ini` to `~/.config/mako/config`.
+
+#### Communication & Entertainment
+- **Firefox:**
+  ```bash
+  # Enable custom stylesheets in about:config
+  # Set: toolkit.legacyUserProfileCustomizations.stylesheets = true
+  # Then find your profile folder via about:support → "Profile Folder"
+  mkdir -p "$(find ~/.mozilla/firefox -name '*.default-release' -type d)/chrome"
+  cp firefox-userChrome.css "$(find ~/.mozilla/firefox -name '*.default-release' -type d)/chrome/userChrome.css"
+  # Restart Firefox
+  ```
+- **Discord (Vesktop / Vencord):**
+  ```bash
+  # In Vesktop/Vencord: Settings → Vencord → Themes → paste or load file
+  cp discord-vencord.css ~/.config/vesktop/themes/antigravity.css
+  ```
+- **Spotify (Spicetify):**
+  ```bash
+  mkdir -p ~/.config/spicetify/Themes/Antigravity
+  cp spicetify-color.ini ~/.config/spicetify/Themes/Antigravity/color.ini
+  cp spicetify-user.css ~/.config/spicetify/Themes/Antigravity/user.css
+  spicetify config current_theme Antigravity color_scheme base
+  spicetify apply
+  ```
+- **Telegram Desktop:** Settings → Chat Settings → Choose from file → select `telegram.tdesktop-theme`.
 
 ## 💡 Troubleshooting
 

@@ -1,0 +1,240 @@
+/* ======================================================
+ * Antigravity Theme for Spotify — Gruvbox Dark Hard
+ * Spicetify user.css
+ * ======================================================
+ * Companion to color.ini — handles element-level styling
+ * that color tokens alone cannot reach.
+ * ====================================================== */
+
+/* --- Root font and smoothing --- */
+body {
+  font-family: 'JetBrainsMono Nerd Font', 'Inter', 'Segoe UI', sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* --- Global transitions for smooth feels --- */
+*,
+*::before,
+*::after {
+  transition-duration: 0.15s !important;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d2021 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #504945 !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #665c54 !important;
+}
+
+/* --- Top bar / Navigation --- */
+.main-topBar-container {
+  background-color: #1d2021 !important;
+  border-bottom: 1px solid #3c3836 !important;
+}
+
+.main-topBar-background {
+  background-color: transparent !important;
+}
+
+/* Navigation buttons (back / forward) */
+.main-topBar-historyButtons button {
+  background-color: #282828 !important;
+  color: #ebdbb2 !important;
+  border: 1px solid #3c3836 !important;
+}
+
+.main-topBar-historyButtons button:hover {
+  background-color: #3c3836 !important;
+  color: #fbf1c7 !important;
+}
+
+/* --- Sidebar / Navigation Panel --- */
+.main-yourLibraryX-libraryRootlist,
+.main-navBar-navBar {
+  background-color: #1d2021 !important;
+}
+
+.main-rootlist-rootlistItem:hover,
+.main-navBar-navBarLink:hover {
+  background-color: #3c3836 !important;
+}
+
+.main-rootlist-rootlistItemLink.active,
+.main-navBar-navBarLinkActive {
+  background-color: #3c3836 !important;
+  color: #fabd2f !important;
+}
+
+/* --- Cards (playlists, albums, artists) --- */
+.main-card-card {
+  background-color: #282828 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.main-card-card:hover {
+  background-color: #3c3836 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Play button on card hover */
+.main-card-PlayButtonContainer button {
+  background-color: #fabd2f !important;
+  color: #1d2021 !important;
+}
+
+.main-card-PlayButtonContainer button:hover {
+  background-color: #d79921 !important;
+  transform: scale(1.06) !important;
+}
+
+/* --- Now Playing Bar --- */
+.main-nowPlayingBar-container {
+  background-color: #1d2021 !important;
+  border-top: 1px solid #3c3836 !important;
+}
+
+/* Song title in player */
+.main-trackInfo-name a {
+  color: #ebdbb2 !important;
+}
+
+.main-trackInfo-name a:hover {
+  color: #fbf1c7 !important;
+}
+
+/* Artist name in player */
+.main-trackInfo-artists a {
+  color: #a89984 !important;
+}
+
+.main-trackInfo-artists a:hover {
+  color: #fabd2f !important;
+}
+
+/* --- Playback Controls --- */
+.player-controls__buttons button {
+  color: #a89984 !important;
+}
+
+.player-controls__buttons button:hover {
+  color: #fbf1c7 !important;
+}
+
+/* Active shuffle / repeat */
+.control-button--active,
+.player-controls__buttons button[aria-checked="true"] {
+  color: #fabd2f !important;
+}
+
+/* Play / Pause button */
+.main-playPauseButton-button {
+  background-color: #fabd2f !important;
+  color: #1d2021 !important;
+}
+
+.main-playPauseButton-button:hover {
+  background-color: #d79921 !important;
+  transform: scale(1.06) !important;
+}
+
+/* --- Progress Bar --- */
+.playback-bar .progress-bar__slider {
+  background-color: #fabd2f !important;
+}
+
+.playback-bar .progress-bar__fg {
+  background-color: #fabd2f !important;
+}
+
+.playback-bar:hover .progress-bar__fg {
+  background-color: #fbf1c7 !important;
+}
+
+/* Volume slider */
+.volume-bar .progress-bar__fg {
+  background-color: #8ec07c !important;
+}
+
+/* --- Track List / Playlist View --- */
+.main-trackList-trackListRow:hover {
+  background-color: rgba(60, 56, 54, 0.6) !important;
+}
+
+.main-trackList-active {
+  color: #fabd2f !important;
+}
+
+/* Playing indicator */
+.main-trackList-playingIcon {
+  color: #fabd2f !important;
+}
+
+/* --- Search Page --- */
+.x-searchInput-searchInputInput {
+  background-color: #282828 !important;
+  color: #fbf1c7 !important;
+  border: 1px solid #3c3836 !important;
+  border-radius: 6px !important;
+}
+
+.x-searchInput-searchInputInput:focus {
+  border-color: #fabd2f !important;
+}
+
+/* Genre/category cards */
+.x-categoryCard-CategoryCard {
+  border-radius: 8px !important;
+}
+
+/* --- Context Menus --- */
+.main-contextMenu-menu {
+  background-color: #282828 !important;
+  border: 1px solid #3c3836 !important;
+  border-radius: 6px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+}
+
+.main-contextMenu-menuItemButton:hover {
+  background-color: #3c3836 !important;
+  color: #fbf1c7 !important;
+}
+
+/* --- Lyrics View --- */
+.lyrics-lyricsContainer-LyricsContainer {
+  background-color: #1d2021 !important;
+}
+
+.lyrics-lyricsContainer-LyricsLine-active {
+  color: #fabd2f !important;
+}
+
+.lyrics-lyricsContainer-LyricsLine-passedLine {
+  color: #928374 !important;
+}
+
+/* --- Friend Activity Panel --- */
+.main-buddyFeed-buddyFeedRoot {
+  background-color: #1d2021 !important;
+}
+
+/* --- Tooltips --- */
+.tippy-content {
+  background-color: #282828 !important;
+  color: #ebdbb2 !important;
+  border: 1px solid #3c3836 !important;
+  border-radius: 4px !important;
+}
