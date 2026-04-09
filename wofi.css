@@ -1,98 +1,87 @@
-/* Antigravity Wofi — Premium Gruvbox Dark Hard */
-@define-color bg      rgba(29, 32, 33, 0.95); /* #1d2021 with tiny transparency */
+/* Antigravity Wofi — Minimalist App Drawer */
+@define-color bg      #1d2021;
 @define-color bg-sel  #3c3836;
 @define-color fg      #a89984;
 @define-color fg-sel  #ebdbb2;
 @define-color border  #504945;
-@define-color accent  #fabd2f; /* Gruvbox Yellow */
 
 * {
-    font-family: 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', monospace;
-    font-size: 16px;
-    outline: none;
+    font-family: 'JetBrainsMono Nerd Font', monospace;
+    font-size: 14px;
 }
 
 window {
     background-color: @bg;
     border: 2px solid @border;
-    border-radius: 16px;
-    padding: 10px;
-}
-
-#outer-box {
-    margin: 5px;
-    padding: 10px;
-    background-color: transparent;
-}
-
-#inner-box {
-    margin: 5px;
-    background-color: transparent;
+    border-radius: 0;
+    margin: 0;
 }
 
 #input {
-    background-color: #282828; 
-    color: @fg-sel;
-    border: 1px solid @border;
-    border-radius: 10px;
-    padding: 14px 18px;
-    margin-bottom: 15px;
-    font-size: 18px;
+    background-color: transparent;
+    color: @fg;
+    border: none;
+    border-bottom: 1px solid @border;
+    border-radius: 0;
+    padding: 12px 14px;
+    margin: 0;
 }
 
 #input:focus {
-    border: 1px solid @accent;
-    background-color: #32302f;
+    border-bottom: 1px solid @border;
+    box-shadow: none;
 }
 
-#scroll {
-    margin-top: 5px;
-    border: none;
-    margin-bottom: 5px;
+#outer-box {
+    margin: 0;
+    padding: 0;
+    background-color: @bg;
+}
+
+#inner-box {
+    background-color: @bg;
+    margin: 0;
+    padding: 0;
+}
+
+#text {
+    color: @fg;
+    margin: 0;
 }
 
 #entry {
-    padding: 12px 16px;
-    margin: 4px 0px;
-    border-radius: 10px;
+    padding: 8px 14px;
+    margin: 0;
+    border-radius: 0;
     background-color: transparent;
     border: none;
 }
 
 #entry:selected {
     background-color: @bg-sel;
-    box-shadow: -4px 0px 0px 0px @accent; /* Sleek left accent bar */
+    border: none;
 }
 
 #entry:selected #text {
     color: @fg-sel;
-    font-weight: bold;
 }
 
-#text {
-    color: @fg;
-    margin: 0;
-    vertical-align: middle;
-}
-
-/* App Icons - Restored from being completely hidden! */
 #img {
-    margin-right: 14px;
-    vertical-align: middle;
+    display: none;
 }
 
 scrollbar {
-    background-color: transparent;
+    background-color: @bg;
     margin: 0;
 }
 
 scrollbar slider {
     background-color: @border;
-    border-radius: 6px;
-    min-height: 40px;
-    min-width: 6px;
+    border-radius: 0;
+    min-height: 20px;
+    min-width: 4px;
 }
 
 scrollbar slider:hover {
-    background-color: @accent;
+    background-color: @fg;
 }

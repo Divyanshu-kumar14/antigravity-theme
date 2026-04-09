@@ -84,8 +84,8 @@ Antigravity themes the modern Linux stack from the ground up:
 - **[SwayOSD](https://github.com/ErikReider/SwayOSD):** On-screen volume/brightness popups (`swayosd.css`)
 
 ### App Launchers
-- **[Walker](https://github.com/abenz1267/walker):** Premium app runner (`walker.css`)
-- **[Wofi](https://hg.sr.ht/~scoopta/wofi):** Fallback application palette (`wofi.css`)
+- **[Walker](https://github.com/abenz1267/walker):** Premium app runner with custom layout (`walker.css`, `walker-layout.xml`)
+- **[Wofi](https://hg.sr.ht/~scoopta/wofi):** Minimalist fallback application palette (`wofi.css`)
 
 ### Terminal Emulators
 - **[Alacritty](https://alacritty.org/)** (`alacritty.toml`)
@@ -110,26 +110,35 @@ Antigravity themes the modern Linux stack from the ground up:
 
 ```text
 antigravity-theme/
-├── backgrounds/             # High-resolution Gruvbox wallpapers
-├── alacritty.toml           # Alacritty config
-├── antigravity.toml         # Superfile color schema
-├── btop.theme               # System monitor styling
-├── colors.toml              # Global color hex mappings
-├── discord-vencord.css      # Discord Vencord/Vesktop theme
-├── firefox-userChrome.css   # Firefox UI chrome styling
-├── ghostty.conf             # Ghostty config
-├── gtk.css                  # Custom GTK application styling
-├── hyprland.conf            # Hyprland WM config (Low-RAM optimized)
-├── hyprlock.conf            # Screen locker config
-├── kitty.conf               # Kitty config
-├── mako.ini                 # Notification daemon styling
-├── neovim.lua               # Neovim color integration
-├── spicetify-color.ini      # Spicetify Spotify color tokens
-├── spicetify-user.css       # Spicetify Spotify element styling
-├── telegram.tdesktop-theme  # Telegram Desktop theme
-├── walker.css               # Walker app runner theme
-├── waybar.css               # Waybar status bar theme
-└── wofi.css                 # Wofi app palette theme
+├── backgrounds/                      # Optimized JPEG wallpapers (bg-1, bg-2, bg-3)
+├── screenshots/                      # Theme showcase screenshots
+├── alacritty.toml                    # Alacritty terminal config
+├── antigravity.toml                  # Superfile file manager color schema
+├── btop.theme                        # btop system monitor styling
+├── chromium.theme                    # Chromium GTK theme name
+├── colors.toml                       # Global ANSI color hex mappings
+├── discord-vencord.css               # Discord Vencord/Vesktop theme
+├── firefox-userChrome.css            # Firefox UI chrome styling
+├── ghostty.conf                      # Ghostty terminal config
+├── gtk.css                           # Custom GTK application styling
+├── hyprland.conf                     # Hyprland WM config (low-RAM optimized)
+├── hyprland-preview-share-picker.css # Screen share picker styling
+├── hyprlock.conf                     # Screen locker config
+├── icons.theme                       # Icon theme name
+├── keyboard.rgb                      # Keyboard backlight color (#ebdbb2)
+├── kitty.conf                        # Kitty terminal config
+├── mako.ini                          # Notification daemon styling
+├── monitors.conf                     # Monitor resolution & scaling
+├── neovim.lua                        # Neovim colorscheme bridge
+├── obsidian.css                      # Obsidian note editor theme
+├── spicetify-color.ini               # Spicetify Spotify color tokens
+├── spicetify-user.css                # Spicetify Spotify element styling
+├── telegram.tdesktop-theme           # Telegram Desktop theme
+├── vscode.json                       # VS Code raw palette values
+├── walker.css                        # Walker app runner theme
+├── walker-layout.xml                 # Walker custom GTK layout
+├── waybar.css                        # Waybar status bar theme
+└── wofi.css                          # Wofi app drawer theme
 ```
 
 ## 🚀 Installation
